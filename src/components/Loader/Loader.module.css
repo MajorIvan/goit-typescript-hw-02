@@ -3,9 +3,25 @@
   margin-inline: auto;
 }
 
-.color-ring-wrapper {
+/* .color-ring-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+} */
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border: 6px solid #e15b64;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
