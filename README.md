@@ -1,2 +1,3 @@
-goit-typescript-hw-01
-GoIT FSON114 TypeScript Homework 1
+# goit-typescript-hw-02
+
+GoIT FSON114 TypeScript Homework 2
