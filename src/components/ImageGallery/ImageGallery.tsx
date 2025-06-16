@@ -1,7 +1,6 @@
 import ImageCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
-
-import type { Image } from "../../api";
+import type { Image } from "../../types/types";
 
 type ImageGalleryProps = {
   images: Image[];
@@ -13,15 +12,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, openModal }) => {
     <ul className={css.gallery}>
       {images.map((image, index) => (
         <li key={`${image.id}_${index}`} className={css.card}>
-          <ImageCard
-            image={image}
-            openModal={() =>
-              openModal({
-                src: image.urls.regular,
-                alt: image.alt_description || "Image",
-              })
-            }
-          />
+          <ImageCard image={image} openModal={openModal} />
         </li>
       ))}
     </ul>

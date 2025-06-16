@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
+import type { Image } from "../../types/types";
 import fetchImages from "../../api";
-import type { Image } from "../../api";
 import SearchBar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import Loader from "../Loader/Loader";

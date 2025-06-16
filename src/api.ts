@@ -1,15 +1,7 @@
 import axios from "axios";
+import type { Image } from "./types/types";
 
-export type Image = {
-  id: string;
-  urls: {
-    small: string;
-    regular: string;
-  };
-  alt_description: string;
-};
-
-export type UnsplashApiResponse = {
+type UnsplashApiResponse = {
   results: Image[];
   total: number;
   total_pages: number;

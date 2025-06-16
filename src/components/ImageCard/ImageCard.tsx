@@ -1,9 +1,9 @@
 import css from "./ImageCard.module.css";
-import type { Image } from "../../api";
+import type { Image } from "../../types/types";
 
 type ImageCardProps = {
   image: Image;
-  openModal: (image: { src: string; alt: string }) => void;
+  openModal: (data: { src: string; alt: string }) => void;
 };
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, openModal }) => {
