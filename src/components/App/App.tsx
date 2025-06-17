@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { Image } from "../../types/types";
+import type { Image } from "../../types";
 import fetchImages from "../../api";
 import SearchBar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";

@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Image } from "./types/types";
+import type { Image } from "./types";
 
 type UnsplashApiResponse = {
   results: Image[];
