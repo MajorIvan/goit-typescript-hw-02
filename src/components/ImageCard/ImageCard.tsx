@@ -3,7 +3,7 @@ import type { Image } from "../../types/types";
 
 type ImageCardProps = {
   image: Image;
-  openModal: (data: { src: string; alt: string }) => void;
+  openModal: (image: { src: string; alt: string }) => void;
 };
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, openModal }) => {
